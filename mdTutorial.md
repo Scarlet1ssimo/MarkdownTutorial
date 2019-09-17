@@ -171,13 +171,16 @@ int main()
     return 0;
 }
 
-```</code></pre>
+```
+</code></pre>
+
+
 
 #### Task Lists 任务清单
 
 
 
-​```markdown
+```markdown
 - [x] 摸鱼
 - [x] l4d2
 - [ ] VP260作业
@@ -189,7 +192,10 @@ int main()
 
 #### Tables 表格
 
-
+$\oplus$ | 0 |1
+------------ | -------------|---
+0 | 1|0
+1 | 0| 1
 
 ```markdown
 First Header | Second Header
