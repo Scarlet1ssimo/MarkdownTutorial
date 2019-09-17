@@ -42,7 +42,17 @@
 
 _Just **copy** the code below, to see the result._
 
+我想换行？  
+我不想换行？
+qwq
 
+我换段成功了没？
+
+   前面有没有空格？
+
+中                  间有几个空格？
+
+Markdown真神奇
 
 ```markdown
 我想换行？  
@@ -57,10 +67,11 @@ qwq
 
 Markdown真神奇
 ```
-
 #### Header 标题
 
-
+# This is an h1 tag
+## This is an h2 tag
+###### This is an h6 tag
 
 ```markdown
 # This is an h1 tag
@@ -70,7 +81,9 @@ Markdown真神奇
 
 #### Emphasis 强调
 
+*This text will be italic*
 
+**This text will be bold**
 
 ```markdown
 *This text will be italic*
@@ -82,7 +95,10 @@ Markdown真神奇
 
 ##### Unordered 无序列表
 
-
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
 
 ```markdown
 * Item 1
@@ -93,7 +109,11 @@ Markdown真神奇
 
 ##### Ordered 有序列表
 
-
+1. Item 1
+2. Item 2
+3. Item 3
+   1. Item 3a
+   2. Item 3b
 
 ```markdown
 1. Item 1
@@ -105,7 +125,7 @@ Markdown真神奇
 
 #### Images 图片
 
-
+![awsl](https://s2.ax1x.com/2019/09/17/n5Sve1.jpg)
 
 ```markdown
 ![awsl](https://s2.ax1x.com/2019/09/17/n5Sve1.jpg)
@@ -113,7 +133,9 @@ Markdown真神奇
 
 #### Links 链接
 
+[Scarlet's blog](https://scarlet-climax.github.io/)
 
+https://scarlet-climax.github.io/ - automatic!
 
 ```markdown
 [Scarlet's blog](https://scarlet-climax.github.io/)
@@ -123,7 +145,9 @@ https://scarlet-climax.github.io/ - automatic!
 
 #### Blockquotes 块引用
 
-
+> 我想换行  
+> 我不想换行
+> 我说不换行就不换行
 
 ```markdown
 > 我想换行  
@@ -134,7 +158,8 @@ https://scarlet-climax.github.io/ - automatic!
 
 #### Inline code 行内代码
 
-
+python用`^`来表示异或运算，用`**`表示乘方运算。
+所以对python来说，`3^3==0`而`3**3==81`
 
 ```markdown
 python用`^`来表示异或运算，用`**`表示乘方运算。
@@ -147,7 +172,18 @@ GitHub发布了基于CommonMark的GitHub Flavored Markdown（GFM）的正式规�
 
 #### Syntax Highlighting 语法高亮
 
+```cpp
+#include <cstdio>
+#include <iostream>
+using namespace std;
 
+int main()
+{
+    cout << "Hello world!" << endl;
+    return 0;
+}
+
+```
 
 <pre><code>```cpp
 #include <cstdio>
@@ -164,7 +200,13 @@ int main()
 
 #### Task Lists 任务清单
 
-
+- [x] 摸鱼
+- [x] l4d2
+- [ ] VP260作业
+- [ ] VV286作业
+- [ ] VE215作业
+- [ ] VE270 Lab
+- [ ] VE300作业
 
 ```markdown
 - [x] 摸鱼
@@ -178,7 +220,10 @@ int main()
 
 #### Tables 表格
 
-
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
 
 ```markdown
 First Header | Second Header
@@ -189,7 +234,7 @@ Content in the first column | Content in the second column
 
 #### Strikethrough 删除线
 
-
+~~我觉得markdown还蛮简单的~~
 
 ```markdown
 ~~我觉得markdown还蛮简单的~~
