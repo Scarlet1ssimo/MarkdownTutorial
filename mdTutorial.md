@@ -26,13 +26,22 @@
   - 编辑器插件，如VSCode
   - 浏览器插件，如Markdown Here
 
+### 注意事项
+
+- 在原版 Markdown 语法的基础上，有很多扩展语法，但并不是所有的扩展语法都能最终被正确渲染出来。
+- 不同编辑器对不同语法支持程度不同。
+- 你甚至可以自己定义将每个标签解析成什么样子。
+
+我们先介绍基础语法(CommonMark)，再介绍一点流行的扩展语法 GFM。
+
 ## Markdown 语法详解
 
 ### Basic Syntax 基础语法 (CommonMark)
 
 #### Paragraphs 段落
 
-> A sequence of non-blank lines that cannot be interpreted as other kinds of blocks forms a paragraph. The contents of the paragraph are the result of parsing the paragraph’s raw content as inlines. The paragraph’s raw content is formed by concatenating the lines and removing initial and final whitespace. Final spaces are stripped before inline parsing, so a paragraph that ends with two or more spaces will not end with a hard line break:
+> A sequence of non-blank lines that cannot be interpreted as other kinds of blocks forms a paragraph. The contents of the paragraph are the result of parsing the paragraph’s raw content as inlines. The paragraph’s raw content is formed by concatenating the lines and removing initial and final whitespace.  
+> Final spaces are stripped before inline parsing, so a paragraph that ends with two or more spaces will not end with a hard line break:
 
 不是很严谨的人话：
 
@@ -40,7 +49,7 @@
 - 段落内容：去掉多余空格后的结果
 - 行尾的两个空格可以实现段内换行
 
-_Just **copy** the code below, to see the result._
+_Just **copy** the code below, to see the result._ 
 
 
 
@@ -57,6 +66,8 @@ qwq
 
 Markdown真神奇
 ```
+
+[^1]:Typora的渲染不严格遵循CommonMarks（更为人性化，语法更宽松），所以上面的测试在Typora中不会正确显示。这意味着，平时在Typora上编辑的文件在Github会被不同地渲染，希望能注意到这一点。
 
 #### Header 标题
 
@@ -166,7 +177,7 @@ int main()
 
 
 
-```markdown
+​```markdown
 - [x] 摸鱼
 - [x] l4d2
 - [ ] VP260作业
