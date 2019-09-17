@@ -160,7 +160,8 @@ GitHub发布了基于CommonMark的GitHub Flavored Markdown（GFM）的正式规�
 
 
 
-<pre><code>```cpp
+~~~markdown
+```cpp
 #include <cstdio>
 #include <iostream>
 using namespace std;
@@ -170,11 +171,8 @@ int main()
     cout << "Hello world!" << endl;
     return 0;
 }
-
 ```
-</code></pre>
-
-
+~~~
 
 #### Task Lists 任务清单
 
@@ -192,16 +190,15 @@ int main()
 
 #### Tables 表格
 
-$\oplus$ | 0 |1
------------- | -------------|---
-0 | 1|0
-1 | 0| 1
+
 
 ```markdown
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+A | B | $\oplus$ 
+- | - | - 
+0 | 0 | 0 
+0 | 1 | 1 
+1 | 0 | 1 
+1 | 1 | 0 
 ```
 
 #### Strikethrough 删除线
@@ -209,7 +206,7 @@ Content in the first column | Content in the second column
 
 
 ```markdown
-~~我觉得markdown还蛮简单的~~
+~~大家是不是觉得markdown还蛮简单的~~
 ```
 
 
